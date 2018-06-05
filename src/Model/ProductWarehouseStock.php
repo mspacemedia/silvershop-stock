@@ -9,7 +9,7 @@ use SilverShop\Stock\Model\ProductWarehouse;
 class ProductWarehouseStock extends DataObject
 {
     private static $db = [
-        'Quantity' => 'Varchar',
+        'Quantity' => 'Int', // Supports -1, 0 and Positive quantities
         'ProductID' => 'Int',
         'ProductClass' => 'Varchar(255)' // instance of Buyable
     ];
